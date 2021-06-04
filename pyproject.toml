@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "celery-operational-error"
+version = "1.0.0"
+description = "Showcase the cause of OperationalError in Celery / Kombu"
+authors = ["Geoffroy GOBERT <geoffroy.gobert@tier.app>"]
+
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+# task manager
+celery = "^5.1.0"
+redis = "*"
+
+flake8 = "^3.9.2"
+black = "^21.5b2"
+python-dotenv = "^0.17.1"
+
+[tool.poetry.dev-dependencies]
+ipython = "*"
+
+[tool.black]
+line-length = 79
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
